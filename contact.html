@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<style>
+  body{
+    background-image:url("images/OIG\ \(1\)-modified.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+      background-position: center;
+  }
+</style>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a class="nav-link" href="index.html">Home</a>
+            </nav>
+        </header>
+        <form action="https://formspree.io/f/mnqkndlb" method="POST" class="contact-form">
+            <h1>Contact Me</h1>
+            <div class="input-group">
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+            </div>
+            <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+            <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
